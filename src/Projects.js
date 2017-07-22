@@ -25,7 +25,7 @@ class Projects extends Component {
         />
         <hr />
         <Project
-          img=""
+          img="portfolio/snapstream.png"
           title="SnapStream"
           subtitle="Mobile app and Back-End API Development"
           link=""
