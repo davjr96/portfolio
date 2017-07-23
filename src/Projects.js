@@ -4,7 +4,7 @@ import Project from "./Project";
 class Projects extends Component {
   render() {
     return (
-      <div>
+      <div className="container width-limit">
         <Project
           img="portfolio/vagrades.png"
           title="VA Grades"

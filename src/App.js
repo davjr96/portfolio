@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <nav className="nav is-dark has-shadow" id="top">
+          <nav className="nav has-shadow" id="top">
             <div className="container">
               <div className="nav-left">
                 <h1 className="nav-item">Daniel Voce</h1>
@@ -20,7 +20,6 @@ class App extends Component {
                 <span />
               </label>
               <input type="checkbox" id="nav-toggle-state" />
-
               <div className="nav-right nav-menu is-hidden-tablet">
                 <li className="nav-item is-tab is-active">
                   <Link to="/">Home</Link>
