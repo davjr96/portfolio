@@ -28,9 +28,6 @@ class App extends Component {
                 <li className="nav-item is-tab">
                   <Link to="/projects">Projects</Link>
                 </li>
-                <li className="nav-item is-tab">
-                  <Link to="/experience">Experience</Link>
-                </li>
               </div>
             </div>
           </nav>
