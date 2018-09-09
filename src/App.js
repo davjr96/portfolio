@@ -9,27 +9,17 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <nav className="nav has-shadow" id="top">
-            <div className="container">
-              <div className="nav-left">
-                <h1 className="nav-item">Daniel Voce</h1>
-              </div>
-              <label className="nav-toggle" htmlFor="nav-toggle-state">
-                <span />
-                <span />
-                <span />
-              </label>
-              <input type="checkbox" id="nav-toggle-state" />
-              <div className="nav-right nav-menu is-hidden-tablet">
-                <li className="nav-item is-tab is-active">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="nav-item is-tab">
-                  <Link to="/projects">Projects</Link>
-                </li>
-              </div>
+          <div className="container">
+            <input type="checkbox" id="nav-toggle-state" />
+            <div className="nav-right nav-menu is-hidden-tablet">
+              <li className="nav-item is-tab is-active">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="nav-item is-tab">
+                <Link to="/projects">Projects</Link>
+              </li>
             </div>
-          </nav>
+          </div>
 
           <div className="columns">
             <aside className="column is-2 aside hero is-fullheight is-hidden-mobile">
@@ -46,13 +36,6 @@ class App extends Component {
                     <a href="https://github.com/davjr96">
                       <span className="icon">
                         <i className="fa fa-fw fa-github-square" />
-                      </span>
-                    </a>
-                  </div>
-                  <div className="column">
-                    <a href="https://bitbucket.org/davjr96/">
-                      <span className="icon">
-                        <i className="fa fa-fw fa-bitbucket-square" />
                       </span>
                     </a>
                   </div>
