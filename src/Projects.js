@@ -17,11 +17,28 @@ class Projects extends Component {
             at GMU and JMU. We also added a blog. All of the data is stored in a searchable and sortable table to allow users to easily find
             what they are looking for. Once the correct class is found a user can view the grade distribution by section/professor and see some statistics
             such as average GPA and standard deviation. There is also a visualization.`}
-          technologies={`• Python Flask • MongoDB Atlas • D3js • Bootstrap • AWS EC2 • AWS Route 53 •`}
+          technologies={`• NodeJS • PostgresSQL • ReactJS • Google Cloud Platform •`}
           takeaways={`This project gave me insight into developing large scale applications.
                       We are hosting a good amount of data (Almost 100k individual records) which is used by a lot of people.
                       As of summer 2017 we had about 8000 unique users, which is almost half of UVA's Undergraduate population!`}
-          status={`Version 2 of vagrades.com is scheduled to be released in Q4 2017. This version will be a complete re-write using NodeJS, ReactJS, and PostgresSQL.`}
+          status={`Version 2 of vagrades.com has been released. This was a complete re-write using NodeJS, ReactJS, and PostgresSQL.`}
+        />
+        <hr />
+        <Project
+          img="portfolio/lab.png"
+          title="Homelab"
+          subtitle="Networking and Cyber Security"
+          link="https://www.gp.danielvoce.com"
+          why={`I desired to learn more about enterprise networking and cyber security so I decided to setup equipment at home to play around with it in a controlled test environment.`}
+          description={`My homelab consists of two seperate networks. I have one VLAN which contains a UniFi Security gateway firewall with access to the outside world. This is conencted to a couple of POE switches and two
+            UniFi AC WiFi Access points. This combination provides fast WiFi to the entire house. I then have a Palo Alto Networks PA-200 Next Generation Firewall connected to this network. Behind this connected over ethernet or a
+            seperate WiFi VLAN I have all of my personal devices along with a Dell R710 1U Server. This server is running VMWare ESXI hypervisor with a number of VMs. These VMs include Atlassian Jira for basic task managment, Splunk
+            to view all the PA-200 Logs in a better format, An Ubuntu VM and a Windows Server VM for classes that require different OSes, an Apache Guacamole Server to provide a clientless RDP gateway to those VMs, and a T-Pot "honeypot"
+            to monitor external connection attempts to the network. I have also setup the Global Protect VPN on the PA-200 to allow me to access all of these resources remotely. `}
+          technologies={`• Networking • Cyber Security • Palo Alto Networks Management • Virtualization •`}
+          takeaways={`This project taught me a lot about networking. It has also proved very useful to be able to access the computing resources for school projects. It is also super interesting to monitor the honeypot
+            and view connection attempts.`}
+          status={`This project is always changing ;)`}
         />
         <hr />
         <Project
@@ -62,10 +79,10 @@ class Projects extends Component {
             I also used another Adafruit radio Module and a Sparkfun Open Log at the top.
             When a racer started the course, the time was noted, when they cross the finish line the radio relayed to the start gate and the time was finished.
             The time is then uploaded to the custom NodeJS webserver using the Arduino library over a Wi-Fi hotspot. Racers could then see their times.`}
-          technologies={`• NodeJS • MongoDB Atlas • ReactJS • AWS EC2 • AWS Route 53 • ESP8266 • Custom Circuitry • Embedded C •`}
+          technologies={`• NodeJS • MongoDB Atlas • ReactJS • Google Cloud Platform • ESP8266 • Custom Circuitry • Embedded C •`}
           takeaways={`This project was my first experience developing an IOT device. I learned a lot about interfacing embedded systems with the internet.
             It was also my first Node and React project and tought me a lot about both of those technologies.`}
-          status={`By winter 2017-2018 I would like to build a regulation start gate (Pole tripped by the racer’s shins) and have an RFID based recognition system, so racers names would show next to their times on the Website.`}
+          status={`This system will be used in winter 2018-2019 during our practices.`}
         />
         <hr />
         <Project
